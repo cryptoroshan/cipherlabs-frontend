@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import linkedinIcon from "/imgs/landing/linkedin.svg";
 import termsofuseIcon from "/imgs/landing/termsofuse.svg";
-import closeIcon from "/imgs/landing/close.svg";
+import twitterIcon from "/imgs/landing/twitter.svg";
 
 const Footer = () => {
   return (
@@ -10,10 +10,15 @@ const Footer = () => {
       <a href="/" target="_blank">
         <img src={linkedinIcon} />
       </a>
-      <Link to="/privacy-policy" className="flex flex-row gap-4 hover:cursor-pointer">
+      <Link
+        to="/privacy-policy"
+        className="flex flex-row gap-4 hover:cursor-pointer"
+      >
         <img src={termsofuseIcon} />
       </Link>
-      <img className="hover:cursor-pointer" src={closeIcon} />
+      <a href="https://twitter.com/cipherlabsxyz" target="_blank">
+        <img src={twitterIcon} />
+      </a>
     </footer>
   );
 };
