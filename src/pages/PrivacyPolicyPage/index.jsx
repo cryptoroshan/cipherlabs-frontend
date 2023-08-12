@@ -1,617 +1,428 @@
+import { useEffect } from 'react'
+
 const PrivacyPolicyPage = () => {
+  useEffect(() => {
+    document.title = "Privacy Policy | Cipher Labs";
+    document.getElementsByTagName("META")[2].content="Learn about Cipher Labs' dedication to safeguarding your personal information. Our Privacy Policy outlines the data we collect, how it's used, and the measures we take to protect it.";
+  }, [])
+
   return (
     <section className="flex flex-col gap-4 py-[82px] lg:py-[189px] text-secondary sm:w-1/2 2xl:w-2/5 mx-auto px-[22px] text-justify">
       <section className="flex flex-col gap-4">
-        <p className="text-4xl lg:text-5xl font-black">Terms Of Use</p>
+        <p className="text-4xl lg:text-5xl font-black">Privacy Policy</p>
         <p className="text-base">Last Updated: August 1, 2023</p>
         <p className="text-base">1. Introduction</p>
         <p className="text-base">
-          Welcome to Cipher Labs. These Terms of Service ("Terms") are a
-          contract governing your use of the various products, services, and
-          features (collectively referred to as our "Services") and are agreed
-          upon between you (an individual or organisation) and Cipher Labs. By
-          accessing, browsing, or otherwise using any part of our Services, you
-          agree to be bound by these Terms. You represent and warrant that you
-          are of legal age to form a binding contract and are not a person
-          barred from receiving services under the laws of any applicable
-          jurisdiction.
+          Cipher Labs ("we," "our," or "us") is committed to respecting and
+          protecting your privacy. This Privacy Policy details our practices
+          regarding the collection, use, storage, and disclosure of personal
+          information we receive when you use our services, including our
+          website, its associated subdomains (collectively, our "Service"), and
+          our application, Cipher Labs (the "App").
         </p>
         <p className="text-base">
-          Our mission is to revolutionise DeFi through the crafting of
-          innovative tools, contributing actively towards governance in key Web3
-          ecosystems, and focusing on the development of software for crypto
-          trading. Our Services are designed to offer an advanced, intuitive,
-          and secure experience, with access to detailed analytics for improved
-          trading decision-making.
+          Personal information refers to data about you that is personally
+          identifiable, such as your name, address, email address, or phone
+          number, as well as other non-public information that is associated
+          with the foregoing. We collect personal information when you use our
+          Service or otherwise communicate with us.
         </p>
         <p className="text-base">
-          These Terms are subject to change at our sole discretion. We will
-          notify you of any material changes via the Services, email, or other
-          similar means. Your continued use of Services after such updates
-          confirm your acceptance of the changes and the revised Terms.
+          By accessing or using our Service, you acknowledge that you have read
+          this Privacy Policy and understand its contents. Your use of our
+          Service and any dispute over privacy is subject to this Policy and our
+          Terms of Service, including its applicable limitations on damages and
+          the resolution of disputes.
         </p>
         <p className="text-base">
-          Additionally, your use of our Services is governed by our Privacy
-          Policy, which is incorporated into these Terms by this reference. Your
-          agreement to these Terms also signifies your consent and agreement to
-          our Privacy Policy.
+          Please note that this Privacy Policy does not govern the practices of
+          third parties, including our partners, third-party service providers,
+          and social networks, unless otherwise stated. We are not responsible
+          for, and do not have any control over, the privacy practices of these
+          third parties.
         </p>
         <p className="text-base">
-          IMPORTANT: Please review these Terms carefully, especially the
-          disclaimers in Section 9 and the arbitration provision in Section 14,
-          which requires you to resolve any disputes with us individually
-          through final and binding arbitration.
+          If you do not agree with our policies and practices, your choice is
+          not to use our Service. By accessing or using our Service, you agree
+          to this Privacy Policy. Your continued use of our Service after
+          changes are made is deemed to be acceptance of those changes, so
+          please check the policy periodically for updates.
         </p>
         <p className="text-base">
-          Please refrain from using our Services if you do not agree to these
-          Terms, and contact us at support@cipherlabs.xyz if you have any
-          questions.
+          As laws across countries and territories vary, and as we strive to
+          ensure compliance with all applicable laws, our privacy policy may
+          change. We encourage users to frequently check this page for any
+          changes. Your continued use of the Service constitutes your acceptance
+          of such changes.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">2. Acceptance of Terms</p>
+        <p className="text-base">2. Information We Collect</p>
         <p className="text-base">
-          By accessing, browsing, or otherwise using the Cipher Labs website or
-          any of our Services, you acknowledge that you have read, understood,
-          and agreed to be bound by these Terms. If you do not agree to all
-          these Terms, you are not authorised to use the website and Services.
+          We collect various types of information to provide and improve our
+          Service to you. The types of information we may collect include:
         </p>
         <p className="text-base">
-          You represent and warrant that you are of legal age to form a binding
-          contract and are not a person barred from receiving services under the
-          laws of any applicable jurisdiction. If you are using or opening an
-          account on the website on behalf of a company, entity, or organisation
-          (collectively "Subscribing Organization"), then you represent and
-          warrant that you are an authorised representative of that Subscribing
-          Organization with the authority to bind such organisation to these
-          Terms; and agree to be bound by these Terms on behalf of such
-          Subscribing Organization.
+          a. Personal Identification Information: We may collect personally
+          identifiable information that you voluntarily provide to us when you
+          register for an account or use certain features of our Service. This
+          may include your name, email address, phone number, and other
+          information that identifies you or can be used to identify you in
+          combination with other information.
         </p>
         <p className="text-base">
-          The use of our Services is also governed by our Privacy Policy, which
-          is incorporated into these Terms by this reference. Your agreement to
-          these Terms also signifies your consent and agreement to our Privacy
+          b. Non-Identifying Information: We may also collect non-identifying
+          information about you, such as demographic information (like your age,
+          gender, or location), or information about your use of our Service.
+          This type of information does not identify you personally, but it may
+          help us understand our user base and improve our Service.
+        </p>
+        <p className="text-base">
+          c. Usage Data: We collect information about your interaction with our
+          Service. This may include data about your computer's Internet Protocol
+          address (IP address), browser type, the pages of our Service that you
+          visit, the time and date of your visit, the time spent on those pages,
+          and other diagnostic data.
+        </p>
+        <p className="text-base">
+          d. Device Information: We may collect information about the device you
+          use to access our Service. This could include the type of device, your
+          operating system, your device's unique identifiers, and mobile network
+          information.
+        </p>
+        <p className="text-base">
+          e. Cookies and Similar Technologies: We use cookies and similar
+          tracking technologies to track your activity on our Service and hold
+          certain information. Cookies are files with a small amount of data
+          which may include an anonymous unique identifier. You can instruct
+          your browser to refuse all cookies or to indicate when a cookie is
+          being sent. However, if you do not accept cookies, you may be unable
+          to use some portions of our Service.
+        </p>
+        <p className="text-base">
+          f. Payment Information: If you make a purchase or sign up for a paid
+          service, we, or our third-party payment processors, may collect
+          payment and billing information.
+        </p>
+        <p className="text-base">
+          By using our Service, you agree to the collection and use of
+          information in accordance with this Privacy Policy.
+        </p>
+      </section>
+      <section className="flex flex-col gap-4">
+        <p className="text-base">2.1. Name and Contact Data</p>
+        <p className="text-base">
+          We collect your first and last name, email address, postal address,
+          phone number, and other similar contact data. This information allows
+          us to communicate with you, including sending messages regarding
+          services, promotions, and events, and providing customer support. When
+          you provide contact data, we may use it to customise our services and
+          the content we deliver to you, improving your overall experience with
+          our platform. Please note that by using our Service, you agree to the
+          collection and use of this information in accordance with this Privacy
           Policy.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">3. Eligibility</p>
+        <p className="text-base">2.2. Credentials</p>
         <p className="text-base">
-          Our Services are intended only for users who are at least 18 years old
-          and are of legal age to form a binding contract under the laws of
-          their jurisdiction. By accessing or using our Services, you represent
-          and warrant that you are at least 18 years old, of legal age in your
-          jurisdiction, and fully able and competent to enter into and abide by
-          these Terms.
-        </p>
-        <p className="text-base">
-          Cipher Labs Services are not available to persons under the age of 18
-          or to any users previously suspended or removed from the Services by
-          Cipher Labs. If you are using the Services on behalf of a company,
-          entity, or organisation, you represent and warrant that you are an
-          authorised representative with the authority to bind that organisation
-          to these Terms and that you agree to these Terms on behalf of that
-          organisation.
-        </p>
-        <p className="text-base">
-          We may, in our sole discretion, refuse to offer the Services to any
-          person or entity and change the eligibility criteria at any time. You
-          are solely responsible for ensuring that these Terms are in compliance
-          with all laws, rules, and regulations applicable to you, and the right
-          to access the Services is revoked where these Terms or use of the
-          Services is prohibited or conflicts with any applicable law, rule, or
-          regulation.
-        </p>
-        <p className="text-base">
-          If you are not eligible to use our Services, or if you do not agree to
-          these Terms, then please do not use our Services. Your use of our
-          Services in any way means that you agree to all of these Terms, which
-          will remain in effect while you use the Services.
-        </p>
-        <p className="text-base">
-          Please note that these Terms do not create any third-party beneficiary
-          rights in any individual or entity that is not a party to these Terms.
-          You may not assign your rights or obligations under these Terms
-          without Cipher Labs’ prior written consent.
+          We collect passwords, password hints, and similar security information
+          for authentication and account access. This information is essential
+          to provide a secure environment for your user account on our Service.
+          It allows us to verify your identity, protect your user data, offer
+          personalised settings, and keep our Service safe from unauthorised
+          access and potential fraud. Please remember that it's your
+          responsibility to keep your login credentials confidential to prevent
+          unauthorised access to your account. We urge you not to share your
+          passwords with anyone and to use strong, unique passwords for your
+          accounts.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">4. API Key Usage</p>
+        <p className="text-base">2.3. Payment Data</p>
         <p className="text-base">
-          At Cipher Labs, we take your privacy and the security of your data
-          very seriously. As part of our services, we may need to utilise your
-          API keys to deliver certain functionalities, such as accessing your
-          Trading Journal information and providing relevant analytics.
-        </p>
-        <p className="text-base">
-          When you provide your API keys, they are used strictly to interact
-          with your account on the respective blockchain or trading platform, to
-          fetch information about your trades, and to display your trading
-          statistics on our platform. These keys are not stored or recorded on
-          our servers in any form.
-        </p>
-        <p className="text-base">
-          We assure you that the API keys you provide are utilised in a
-          read-only mode. This means they are not capable of executing trades,
-          making withdrawals, or performing any other transactional operations.
-          Their function is strictly limited to fetching information necessary
-          for the trading journal feature of our platform. In the unlikely event
-          that these API keys are obtained by an unauthorised party, the risk is
-          limited to that party's ability to view or close your trades. However,
-          we have implemented robust security measures to prevent such an
-          occurrence. It is important to understand that you retain control over
-          these API keys and can revoke them anytime from the respective
-          blockchain or trading platform.
-        </p>
-        <p className="text-base">
-          Please ensure that you only enter your API keys in the designated
-          areas on our website and that you never share them via email or other
-          means. Remember, our staff will never ask you for your API keys. By
-          providing us with your API keys, you agree to their use as described
-          above. If you do not agree with or feel uncomfortable with this usage,
-          you may choose not to use the specific features that require your API
-          keys.
+          We collect data necessary to process your payment if you make
+          purchases. This includes your payment instrument number (such as a
+          credit card number) and the security code associated with your payment
+          instrument. All payment data is stored by our payment processor, and
+          you should review its privacy policies and contact the payment
+          processor directly to respond to your privacy inquiries. We don’t
+          store your payment information other than your zip code and country,
+          which we require for billing and to comply with tax and other
+          government regulations. Rest assured, your financial data is secure
+          during transactions, as we use payment gateways that comply with the
+          Payment Card Industry Data Security Standard (PCI-DSS).
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">5. Services and Usage</p>
+        <p className="text-base">2.4. Automatic Information</p>
         <p className="text-base">
-          Our Services at Cipher Labs are designed to provide a comprehensive
-          suite of tools for users in the blockchain and crypto trading space.
-          The primary features we offer include, but are not limited to:
-        </p>
-        <ul className="text-base list-disc ml-10 list-outside">
-          <li>
-            Trading Journal: This tool allows users to record, track, and
-            analyse their trading activities in a systematic and organised
-            manner. The Trading Journal fetches trade-related data from the
-            user's account on the relevant trading platforms using the API keys
-            provided by the user.
-          </li>
-          <li>
-            Analytics Dashboard: The Analytics Dashboard provides users in-depth
-            analytics and insights about a platform's trading activities. This
-            includes, but is not limited to, data visualisations, trend
-            analysis, and other metrics that can aid in making informed trading
-            decisions.
-          </li>
-        </ul>
-        <p className="text-base">
-          <span className="font-bold">Acceptable Use</span>: You agree to use
-          our Services only for lawful purposes and in a way that does not
-          infringe the rights of, restrict or inhibit anyone else's use and
-          enjoyment of the website. You must not use our Services to:
-        </p>
-        <ul className="text-base list-disc ml-10 list-outside">
-          <li>
-            Misrepresent your identity or affiliation with any person or
-            organisation.
-          </li>
-          <li>
-            Send, knowingly receive, upload, download, use, or re-use any
-            material that does not comply with these Terms.
-          </li>
-          <li>
-            Transmit or procure the sending of any unsolicited or unauthorised
-            advertising or promotional material.
-          </li>
-          <li>
-            Knowingly transmit any data, send or upload any material that
-            contains viruses or any other harmful programs or similar computer
-            code designed to adversely affect the operation of any computer
-            software or hardware.
-          </li>
-        </ul>
-        <p className="text-base">
-          <span className="font-bold">Unacceptable Use</span>: Our Services
-          should not be used in any way that causes, or may be likely to cause,
-          the website, or access to it, to be interrupted, damaged, or impaired
-          in any way. Unacceptable use includes but is not limited to:
-        </p>
-        <ul className="text-base list-disc ml-10 list-outside">
-          <li>
-            Attempting to gain unauthorised access to the Services, the server
-            on which the website is stored, or any server, computer, or database
-            connected to the website.
-          </li>
-          <li>
-            Attacking the website via a denial-of-service attack or a
-            distributed denial-of-service attack.
-          </li>
-          <li>
-            Attempting to reverse-engineer or replicate the functionality of our
-            Services for the purpose of creating a competitive service.
-          </li>
-        </ul>
-        <p className="text-base">
-          By using our Services, you agree to adhere to these guidelines for
-          acceptable and unacceptable use. Failure to comply with these
-          guidelines may result in the termination or suspension of your access
-          to our Services at our sole discretion.
+          When you visit our Service or use our application, we automatically
+          collect certain information about your device and your usage of our
+          Service or application. This includes information about your operating
+          system, your IP address, your browser ID, your browsing activity, and
+          other information about how you interacted with our Service or
+          application. We may collect this information as a part of log files as
+          well as through the use of cookies or other tracking technologies. Our
+          use of cookies and other tracking technologies is discussed more below
+          under the section on "Cookies and Similar Technologies".
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">6. User Accountability</p>
+        <p className="text-base">3. How We Use Your Information</p>
         <p className="text-base">
-          Cipher Labs values the integrity of its Services and expects the same
-          from its users. By using the Services, you agree to abide by the
-          following conduct guidelines:
+          We use the information we collect from you in various ways, including:
         </p>
-        <ul className="text-base list-disc ml-10 list-outside">
-          <li>
-            You must comply with all applicable laws and regulations in using
-            the Services.
-          </li>
-          <li>
-            You must not engage in fraudulent activities or actions that could
-            interfere with the Services or negatively affect other users’
-            ability to use the Services.
-          </li>
-          <li>
-            You must not upload, post, transmit or otherwise distribute
-            information that infringes upon another person's intellectual
-            property rights or other proprietary, contractual or fiduciary
-            rights or obligations.
-          </li>
-          <li>
-            You must not impersonate another person or entity or falsify or
-            delete any author attributions, legal or other proper notices or
-            proprietary designations or labels of the origin or source of
-            software or other material.
-          </li>
-          <li>
-            You must not use the Services for any illegal purpose or in
-            violation of any local, state, national, or international law,
-            including, without limitation, laws governing intellectual property
-            and other proprietary rights and data protection and privacy.
-          </li>
-        </ul>
         <p className="text-base">
-          Violations of any of the user conduct rules may result in immediate
-          termination of your access to the Services without notice at Cipher
-          Labs' sole discretion. In such a case, you may be prohibited from
-          accessing and using the Services in the future.
+          3.1. Provide, operate, and maintain our Service;
+        </p>
+        <p className="text-base">
+          3.2. Improve, personalise, and expand our Service;
+        </p>
+        <p className="text-base">
+          3.3. Understand and analyse how you use our Service;
+        </p>
+        <p className="text-base">
+          3.4. Develop new products, services, features, and functionality;
+        </p>
+        <p className="text-base">
+          3.5. Communicate with you, either directly or through one of our
+          partners, for customer service, to provide you with updates and other
+          information relating to the Service, and for marketing and promotional
+          purposes;
+        </p>
+        <p className="text-base">3.6. Process your transactions;</p>
+        <p className="text-base">
+          3.7. Send you text messages and push notifications;
+        </p>
+        <p className="text-base">3.8. Find and prevent fraud; and</p>
+        <p className="text-base">
+          3.9. For compliance purposes, including enforcing our Terms of Service
+          or other legal rights, or as may be required by applicable laws and
+          regulations or requested by any judicial process or governmental
+          agency.
+        </p>
+        <p className="text-base">
+          The personal information we collect from you may be used for the
+          purposes described in this Privacy Policy or any other way we deem
+          appropriate unless you are informed otherwise.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">7. Intellectual Property Rights</p>
+        <p className="text-base">4. Disclosure of Your Information</p>
         <p className="text-base">
-          All the content and materials available on Cipher Labs, including but
-          not limited to text, graphics, website name, code, images, and logos,
-          are the intellectual property of Cipher Labs and are protected by
-          applicable copyright and trademark law. Any inappropriate use,
-          including but not limited to the reproduction, distribution, display,
-          or transmission of any content on this site, is strictly prohibited
-          unless specifically authorised by Cipher Labs.
+          We are committed to maintaining the trust and confidence of our users.
+          We want you to understand when and why we might share your personal
+          information with others. Your information may be disclosed as follows:
         </p>
         <p className="text-base">
-          The Cipher Labs name, the Cipher Labs logo, and all related names,
-          logos, product and service names, designs, and slogans are trademarks
-          of Cipher Labs or its affiliates or licensors. You must not use such
-          marks without the prior written permission of Cipher Labs. All other
-          names, logos, product and service names, designs, and slogans on this
-          website are the trademarks of their respective owners.
+          4.1. By You: We may share your information with your consent to comply
+          with legal requirements or to protect your rights and the rights of
+          others.
         </p>
         <p className="text-base">
-          We respect the intellectual property rights of others and request that
-          you do the same. If you believe that any material available on or
-          through our Services infringes upon any copyright you own or control,
-          please immediately notify us at legal@cipherlabs.xyz.
-        </p>
-      </section>
-      <section className="flex flex-col gap-4">
-        <p className="text-base">8. Third-Party Links</p>
-        <p className="text-base">
-          For your convenience, our Services may provide links or pointers to
-          third-party sites. We make no representations about any other websites
-          that may be accessed from our Services. If you choose to access such
-          sites, you do so at your own risk. Cipher Labs has no control over the
-          contents of any such third-party sites and accepts no responsibility
-          for them or any loss or damage arising from your use of them. You are
-          subject to any terms and conditions of such third-party sites.
+          4.2. Third-Party Service Providers: We may share your information with
+          trusted third-party vendors, service providers, contractors, or agents
+          who perform services for us or on our behalf and require access to
+          such information to do that work. This includes entities that assist
+          us in operating our website, conducting our business, or servicing
+          you. These parties agree to keep this information confidential.
         </p>
         <p className="text-base">
-          Such links do not imply our endorsement or association with the linked
-          site or the third-party entities. You should carefully review their
-          privacy statements and other conditions of use. We reserve the right
-          to terminate a link to a third-party site at any time, and the fact
-          that we provide such a link does not mean that we endorse, authorise,
-          or sponsor that site, nor does it mean that we are affiliated with the
-          third-party site's owners or sponsors.
+          4.3. Business Transfers: We may share or transfer your information in
+          connection with, or during negotiations of, any merger, sale of
+          company assets, financing, or acquisition of all or a portion of our
+          business to another company.
         </p>
         <p className="text-base">
-          Please note that these third-party sites may send their own cookies to
-          users, collect data, solicit personal information, and generate their
-          own privacy and customer policies. Cipher Labs, Inc. is not
-          responsible and cannot be held liable for the content and activities
-          of these sites. Therefore, we strongly advise you to review the
-          Privacy Policies and Terms of Use of these sites before using them.
-        </p>
-      </section>
-      <section className="flex flex-col gap-4">
-        <p className="text-base">9. Disclaimers</p>
-        <p className="text-base">
-          Cipher Labs, Inc. offers its Services on an “as is” and “as available”
-          basis. Other than what is expressly stated in these Terms, no explicit
-          promises about the Services, their functionality, reliability,
-          quality, availability, suitability to meet your specific needs or
-          their uninterrupted or error-free operation are made. We also do not
-          guarantee the accuracy, timeliness, or completeness of any
-          information, data, or results provided by the Services.
+          4.4. Legal Obligations: We may disclose your information where we are
+          legally required to do so in order to comply with applicable law,
+          governmental requests, a judicial proceeding, court order, or legal
+          process, such as in response to a court order or a subpoena (including
+          in response to public authorities to meet national security or law
+          enforcement requirements).
         </p>
         <p className="text-base">
-          Furthermore, all results stemming from hypothetical, simulated
-          performance tests and quantitative modelling inherently bear
-          limitations. Since these results do not represent actual trading and
-          the trades have not been executed, the outcomes may over- or
-          under-compensate for the impact of certain market factors, such as
-          lack of liquidity. Simulated trading programs and quantitative
-          analysis, in general, are designed with the benefit of hindsight.
-          Therefore, no representation is being made that any account will or is
-          likely to achieve profit or losses similar to those shown.
+          4.5. Vital Interests and Legal Rights: We may disclose information
+          about you where we believe it is necessary to investigate, prevent, or
+          take action regarding potential violations of our policies, suspected
+          fraud, situations involving potential threats to the safety of any
+          person and illegal activities, or as evidence in litigation in which
+          we are involved.
         </p>
         <p className="text-base">
-          Cipher Labs and its Services do not provide financial, investment, or
-          trading advice, and you should not regard any of the Services' content
-          as such. We do not recommend that any specific security, portfolio of
-          securities, transaction or investment strategy is suitable for any
-          specific person. We urge you to conduct your own due diligence and
-          consult with a financial advisor before making any investment
-          decisions. All users should assume that all information provided
-          regarding companies, investments, assets, and markets is untrustworthy
-          unless verified by their own independent research.
+          4.6. With your Consent: We may share your personal information for any
+          other purpose with your consent. Please note, we do not sell, trade,
+          or otherwise transfer to outside parties your personally identifiable
+          information.
         </p>
         <p className="text-base">
-          Investing in securities and/or crypto assets is highly risky. You may
-          lose some or all of the money invested. Additionally, engaging in
-          margin transactions could lead to losses exceeding the amount
-          invested. Past performance of any security and/or crypto assets or
-          strategy does not guarantee future results. Trading results can never
-          be guaranteed. Future returns are not guaranteed, and a loss of
-          original capital may occur.
-        </p>
-        <p className="text-base">
-          None of the content published in the Services constitutes a
-          recommendation that any particular security, portfolio of securities,
-          transaction, or investment strategy suits any specific person. You
-          should seek advice from an independent financial advisor. The
-          investments and services described herein and through the Services may
-          not be suitable for all investors and may not be suitable for you or
-          your situation. All content provided by the Services is for
-          informational, educational, and entertainment purposes only.
-        </p>
-        <p className="text-base">
-          The information provided through the Services does not constitute
-          investment advice, financial advice, trading advice, or any other sort
-          of advice. The Services and any associated media may contain
-          inaccuracies, typographical errors, and other errors. You understand
-          that you are using any and all information available here at your own
-          risk.
-        </p>
-        <p className="text-base">
-          The Services may be made available or accessed in connection with
-          third-party services and content (including advertising) with
-          different terms of use and privacy policies. We do not endorse these
-          third-party services and content and are not responsible or liable for
-          any of their products or services. Your access to the Services using
-          these applications or devices is subject to the terms of service and
-          privacy policies of these third parties.
-        </p>
-        <p className="text-base">
-          In addition to these disclaimers, we are not providing any financial
-          or investment advice or services via the Services and should not be
-          relied upon as a substitute for consultations with qualified
-          professionals who are familiar with your individual needs. Please
-          consult your accountant, tax advisor, stockbroker, and/or financial
-          advisor as necessary.
+          This Privacy Policy does not limit our use or sharing of anonymised or
+          aggregated data. We reserve the right to use and share this data with
+          our partners and third parties at our discretion.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">10. Limitation of Liability</p>
+        <p className="text-base">5. Cookies and Other Tracking Technologies</p>
         <p className="text-base">
-          TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL CIPHER LABS,
-          ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES,
-          BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR
-          PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA,
-          USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM (i) YOUR
-          ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICES; (ii)
-          ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SERVICES; (iii) ANY
-          CONTENT OBTAINED FROM THE SERVICES; AND (iv) UNAUTHORIZED ACCESS, USE
-          OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT, WHETHER BASED ON
-          WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE) OR ANY OTHER LEGAL
-          THEORY, WHETHER OR NOT WE HAVE BEEN INFORMED OF THE POSSIBILITY OF
-          SUCH DAMAGE, AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO HAVE
-          FAILED OF ITS ESSENTIAL PURPOSE.
+          We use cookies and similar tracking technologies to collect and use
+          personal information about you, including to serve interest-based
+          advertising.
         </p>
         <p className="text-base">
-          Your sole and exclusive right and remedy in case of dissatisfaction
-          with the services or any other grievance shall be your termination and
-          discontinuation of access to or use of the services.
+          5.1. Cookies: "Cookies" are small files that are placed on your hard
+          drive by your web browser when you visit a website. These tiny files
+          are used for various reasons such as remembering your preferences and
+          settings, enabling you to sign in, providing interest-based
+          advertising, analysing how our services are performing, and fulfilling
+          other legitimate purposes. Most web browsers are set to accept cookies
+          by default. However, you can choose to set your browser to remove or
+          reject browser cookies. Please note that if you choose to remove or
+          reject cookies, this could affect the availability and functionality
+          of our Services.
         </p>
         <p className="text-base">
-          As some jurisdictions do not allow the exclusion or the limitation of
-          liability for consequential or incidental damages, in such
-          jurisdictions, our liability shall be limited to the maximum extent
-          permitted by law.
+          5.2. Pixel Tags/Web Beacons: A pixel tag (also known as a web beacon)
+          is a piece of code embedded in our Services that collects information
+          about users' engagement on that web page. The use of a pixel allows us
+          to record, for example, that a user has visited a particular web page
+          or clicked on a particular advertisement.
         </p>
         <p className="text-base">
-          This limitation of liability section applies whether the alleged
-          liability is based on contract, tort, negligence, strict liability, or
-          any other basis, even if Cipher Labs has been advised of the
-          possibility of such damage.
-        </p>
-      </section>
-      <section className="flex flex-col gap-4">
-        <p className="text-base">11. Indemnification</p>
-        <p className="text-base">
-          You agree to defend, indemnify, and hold harmless Cipher Labs, its
-          parent company, officers, directors, employees, and agents, from and
-          against any claims, liabilities, damages, losses, and expenses,
-          including, without limitation, reasonable legal and accounting fees,
-          arising out of or in any way connected with your access to or use of
-          the Services or your violation of these Terms.
+          5.3. Analytics: We use Google Analytics, a service provided by Google,
+          Inc., to gather information about how users engage with our Services.
+          For more information about Google Analytics, please visit
+          www.google.com/policies/privacy/partners/.
         </p>
         <p className="text-base">
-          This includes any third-party claims, actions, or demands, including
-          without limitation reasonable legal and accounting fees, alleging or
-          resulting from your use of our Services, your conduct, your violation
-          of these Terms, or your violation of any third-party rights, including
-          without limitation, any trademark, copyright, property, or privacy
-          rights.
+          5.4. Social Media Features: Our Services may include social media
+          features, such as the Facebook Like button and other widgets that run
+          on our site. These features may collect your IP address and which page
+          you are visiting on our site, and may set a cookie to enable the
+          feature to function properly. Social media features and widgets are
+          either hosted by a third party or hosted directly on our site. Your
+          interactions with these features are governed by the privacy policy of
+          the company providing them.
         </p>
         <p className="text-base">
-          In the event of such a claim, we will provide notice of the claim,
-          suit, or action to the contact information we have for your account.
-          You will cooperate as fully and reasonably required in Cipher Labs’
-          defence of any claim. Cipher Labs reserves the right, at its own
-          expense, to assume the exclusive defence and control of any matter
-          otherwise subject to indemnification by you, and you will not, in any
-          event, settle any claim without the prior written consent of Cipher
-          Labs.
+          5.5. Advertising: We may work with third-party advertisers, search
+          providers, and ad networks ("Advertisers") to learn more about your
+          browsing habits and deliver targeted or interest-based advertisements
+          to you. These Advertisers may place or recognise a unique cookie on
+          your browser (including through the use of pixel tags). They may also
+          use these technologies, along with information they collect about your
+          online use, to recognise you across the devices you use, such as a
+          mobile phone and a laptop, and to make decisions about the
+          advertisements you see.
+        </p>
+        <p className="text-base">
+          By using our Services, you agree to our use of these tracking
+          technologies. If you don't want any information to be collected and
+          used by tracking technologies, you can visit the third-party vendor or
+          the Network Advertising Initiative Opt-Out page.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">12. Termination</p>
+        <p className="text-base">6. Security of Your Information</p>
         <p className="text-base">
-          Cipher Labs reserves the right, in its sole discretion, to terminate
-          or suspend your access to all or any part of our Services at any time
-          for any reason, including but not limited to:
-        </p>
-        <ul className="text-base list-disc ml-10 list-outside">
-          <li>Your violation of these Terms;</li>
-          <li>Your failure to pay any fees due for our Services;</li>
-          <li>Suspected or actual illegal activity;</li>
-          <li>A request by law enforcement or other government agencies;</li>
-          <li>Extended periods of inactivity on your part;</li>
-          <li>Technical or security issues or problems;</li>
-          <li>Engagement in fraudulent or illegal activities;</li>
-          <li>
-            Non-compliance with any rules, regulations, laws, or terms that
-            apply to your use of the Services.
-          </li>
-        </ul>
-        <p className="text-base">
-          Upon termination, you will no longer have access to the Services, and
-          we may remove and discard any content you have submitted to the
-          Services. Furthermore, you agree that we will not be liable to you or
-          any third party for the termination of your access to our Services.
+          We are committed to maintaining the security of your personal
+          information and have measures in place to protect against the loss,
+          misuse, and alteration of the information under our control. We use
+          technological and administrative measures to protect your personal
+          data from unauthorised access, theft, and loss.
         </p>
         <p className="text-base">
-          Termination of your access to and use of our Services does not relieve
-          you of any obligations arising or accruing prior to such termination
-          or limit any liability you otherwise may have to Cipher Labs or any
-          third party, including, without limitation, any indemnity obligations
-          contained herein. The introduction, Acceptance of Terms, Eligibility,
-          Intellectual Property Rights, User Accountability, Limitation of
-          Liability, Indemnification, and Dispute Resolution provisions of these
-          Terms shall survive any such termination or expiration.
-        </p>
-      </section>
-      <section className="flex flex-col gap-4">
-        <p className="text-base">13. Governing Law</p>
-        <p className="text-base">
-          These Terms are governed by and construed in accordance with the laws
-          of the State of New South Wales, Australia, without giving effect to
-          any principles of conflicts of law. You agree to the personal
-          jurisdiction by and venue in the state and federal courts in Sydney,
-          New South Wales, Australia, and waive any objection to such
-          jurisdiction or venue.
+          6.1. Technological Measures: Our security measures include, but are
+          not limited to, data encryption, firewalls, and secure server
+          facilities. For example, when you enter sensitive information (such as
+          credit card numbers) on our registration or order forms, we encrypt
+          that information using secure socket layer technology (SSL).
         </p>
         <p className="text-base">
-          The foregoing provision may not apply to you depending on the laws in
-          your jurisdiction. This Governing Law section shall survive any
-          termination of your use of the Cipher Labs Services.
+          6.2. Administrative Measures: We limit access to your personal
+          information to those employees, agents, contractors, and other third
+          parties who have a business need to know. They will only process your
+          personal information on our instructions and are subject to a duty of
+          confidentiality.
         </p>
         <p className="text-base">
-          In the event that Cipher Labs may lawfully exclude any implied
-          conditions or warranties to the extent permissible by law, we
-          expressly disclaim any liability for breach of those conditions or
-          warranties. In jurisdictions where exclusions for implied conditions
-          or warranties are not allowed, Cipher Labs' liability will at all
-          times be limited to the maximum extent permitted by law.
+          6.3. Data Retention: We retain personal information we collect from
+          you where we have an ongoing legitimate business need to do so (for
+          example, to provide you with a service you have requested or to comply
+          with applicable legal, tax, or accounting requirements).
+        </p>
+        <p className="text-base">
+          6.4. User Responsibility: You also have a significant role in
+          protecting your information. No one can see or edit your personal
+          information without knowing your username and password, so do not
+          share these with others.
+        </p>
+        <p className="text-base">
+          Please be aware, however, that no method of transmitting information
+          over the Internet or storing information is completely secure.
+          Accordingly, we cannot guarantee the absolute security of any
+          information. We will notify you if there is a significant breach of
+          the personal data that we hold.
+        </p>
+        <p className="text-base">
+          By using our Services, you acknowledge that you understand and agree
+          to assume these risks.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">14. Dispute Resolution</p>
+        <p className="text-base">7. Links to Other Websites</p>
         <p className="text-base">
-          In the event of a dispute arising out of or relating to these Terms,
-          including any question regarding its existence, validity, or
-          termination, the parties shall first seek settlement of that dispute
-          by mediation in accordance with the Australian Centre for
-          International Commercial Arbitration (ACICA) Mediation Rules, which
-          are deemed to be incorporated by reference into this clause.
+          Our Service may contain links to other websites that are not operated
+          by us. If you click on a third-party link, you will be directed to
+          that third-party's site. We strongly advise you to review the Privacy
+          Policy of every site you visit.
         </p>
         <p className="text-base">
-          If the dispute is not settled by mediation within 30 days of the
-          commencement of the mediation, or such further period as the parties
-          shall agree in writing, the dispute shall be referred to and finally
-          resolved by arbitration under the ACICA Arbitration Rules. The
-          arbitral tribunal shall consist of a sole arbitrator, to be appointed
-          by the Chairman of ACICA. The seat, or legal place, of arbitration,
-          shall be Sydney, New South Wales, Australia.
+          We have no control over and assume no responsibility for the content,
+          privacy policies, or practices of any third-party sites or services.
+          Your interactions with these features are governed by the privacy
+          policy of the company providing them.
         </p>
         <p className="text-base">
-          The language to be used in the mediation and the arbitration shall be
-          English. The governing law of these Terms shall be the substantive law
-          of New South Wales, Australia. Judgment upon the award rendered by the
-          arbitrator(s) may be entered in any court having jurisdiction thereof.
-        </p>
-        <p className="text-base">
-          Please note that this dispute resolution provision does not preclude
-          you from bringing issues to the attention of federal, state, or local
-          agencies. These agencies can, if the law allows, seek relief on your
-          behalf.
-        </p>
-        <p className="text-base">
-          Notwithstanding any provision in these Terms, we agree that if we make
-          any future change to this arbitration provision (other than a change
-          to any notice address, website link, or telephone number provided
-          herein), that change will not apply to any dispute of which we had
-          written notice on the effective date of the change.
-        </p>
-        <p className="text-base">
-          You agree that, by entering into these Terms, you and Cipher Labs are
-          each waiving the right to a trial by jury or to participate in a class
-          action. Your rights will be determined by a neutral arbitrator, not a
-          judge or jury. The Federal Arbitration Act governs the interpretation
-          and enforcement of this Dispute Resolution provision.
+          Your use of third-party websites, services, or products may be subject
+          to associated third-party terms of use and privacy policies or other
+          agreements, which you are solely responsible for complying with.
+          Cipher Labs does not endorse, approve, or sponsor third-party
+          websites, services, or products.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">15. Changes to Terms of Use</p>
+        <p className="text-base">8. Changes to This Privacy Policy</p>
         <p className="text-base">
-          Cipher Labs reserves the right, in its sole discretion, to modify or
-          replace these Terms of Use at any time. If we make changes that are
-          material, we will provide you with reasonable advance notice of these
-          changes, such as by sending an email to the email address associated
-          with your account, providing notice through the Services, or posting a
-          notice on our website.
+          We may update our Privacy Policy from time to time. We will notify you
+          of any changes by posting the new Privacy Policy on this page, and, if
+          the changes are significant, we will provide a more prominent notice
+          (including, for certain services, email notification of privacy policy
+          changes).
         </p>
         <p className="text-base">
-          The updated Terms of Use will be effective as of the time of posting
-          or such later date as may be specified in the updated Terms of Use. By
-          continuing to access or use the Services after the effective date of
-          any modifications to the Terms of Use, you agree to be bound by the
-          updated Terms of Use. If you do not agree to the updated Terms of Use,
-          you should stop using the Services immediately.
+          You are advised to review this Privacy Policy periodically for any
+          changes. Changes to this Privacy Policy are effective when they are
+          posted on this page. Your continued use of the Service after the
+          effective date of the Privacy Policy (or such other act as specified
+          in the updated Privacy Policy) will constitute your acceptance of the
+          updated Privacy Policy.
         </p>
         <p className="text-base">
-          It is your responsibility to check the Terms of Use periodically for
-          changes. Your continued use of the Services following the posting of
-          any changes to the Terms of Use constitutes acceptance of those
-          changes.
+          Please note that we may enforce changes to the Privacy Policy
+          retroactively to comply with regulatory requirements or agreements
+          with third parties.
         </p>
       </section>
       <section className="flex flex-col gap-4">
-        <p className="text-base">16. Contact Information</p>
+        <p className="text-base">9. Contact Us</p>
         <p className="text-base">
-          If you have any questions about these Terms, please contact Cipher
-          Labs at support@cipherlabs.xyz or write to us at:
+        If you have any questions about this Privacy Policy, please contact us at support@cipherlabs.xyz or write to us at:
         </p>
         <p className="text-base">
-          Cipher Labs <br/>
-          55 Bridge St <br/>
-          Sydney, NSW 2000 <br/>
+          Cipher Labs <br />
+          55 Bridge St <br />
+          Sydney, NSW 2000 <br />
           Australia
         </p>
       </section>

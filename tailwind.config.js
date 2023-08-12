@@ -11,7 +11,8 @@ export default {
       },
       textColor: {
         'primary': '#EAECF0',
-        'secondary': '#FCFCFD'
+        'secondary': '#FCFCFD',
+        'footer': '#98A2B3',
       }
     },
   },
