@@ -7,11 +7,17 @@ const LandingPage = () => {
   }, [])
 
   return (
-    <div className="flex flex-col gap-6 items-center mx-auto text-center max-w-[250px] sm:max-w-[514px] xl:max-w-[768px] 2xl:max-w-[1028px]">
-      <p className="text-5xl xl:text-[64px] 2xl:text-[96px] font-black text-secondary" style={{lineHeight: 'normal'}}>
+    <div className="flex flex-col gap-6 items-center mx-auto text-center xs:max-w-[250px] sm:max-w-[514px] xl:max-w-[768px] 2xl:max-w-[1028px]">
+      <p className="text-5xl xl:text-[64px] 2xl:text-[96px] font-black text-secondary" style={{
+        lineHeight: 'normal',
+        textShadow: '0px 0px 100px #000'
+      }}>
         Blockchain Craftsmen
       </p>
-      <p className="text-base xl:text-2xl 2xl:text-[32px] font-medium text-primary" style={{lineHeight: 'normal'}}>
+      <p className="text-base xl:text-2xl 2xl:text-[32px] font-medium text-primary" style={{
+        lineHeight: 'normal',
+        textShadow: '0px 0px 100px #000'
+      }}>
         Specialising in Web3, we're committed to revolutionising the DeFi landscape
         through advanced trading tools, active governance participation, and
         bespoke software development.
