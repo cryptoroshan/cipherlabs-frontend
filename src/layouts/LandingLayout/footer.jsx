@@ -7,7 +7,7 @@ import twitterIcon from "/imgs/landing/twitter.svg";
 const Footer = () => {
   return (
     <footer className="flex flex-row justify-between items-center w-full">
-      <a href="/" target="_blank">
+      <a href="https://www.linkedin.com/company/cipher-labs-xyz" target="_blank">
         <img src={linkedinIcon} />
       </a>
       <Link
