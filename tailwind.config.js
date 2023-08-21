@@ -15,6 +15,9 @@ export default {
     },
     extend: {
       backgroundColor: {
+        'header': 'rgba(16, 24, 40, 0.25)'
+      },
+      borderColor: {
         'header': '#1D2939'
       },
       textColor: {

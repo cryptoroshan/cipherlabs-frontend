@@ -6,7 +6,7 @@ import menuIcon from "/imgs/landing/menu.svg";
 
 const Header = () => {
   return (
-    <header className="fixed flex flex-row justify-between items-center w-full border-b border-gray-600 px-[22px] py-5 backdrop-blur">
+    <header className="fixed flex flex-row justify-between items-center w-full border-b border-header px-[22px] py-5 backdrop-blur-[2px] bg-header">
       <Link to="/" className="flex flex-row gap-[14px] hover:cursor-pointer">
         <img src={logoIcon} />
         <img src={CipherLabsIcon} />

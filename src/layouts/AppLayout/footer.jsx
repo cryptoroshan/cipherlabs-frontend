@@ -5,7 +5,7 @@ import twitterIcon from "/imgs/landing/twitter.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-row justify-between items-center w-full border-t border-gray-600 px-[22px] py-5 backdrop-blur">
+    <footer className="flex flex-row justify-between items-center w-full border-t border-header px-[22px] py-5 backdrop-blur-[2px] bg-header">
       <a
         href="https://www.linkedin.com/company/cipher-labs-xyz"
         target="_blank"
