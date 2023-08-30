@@ -15,7 +15,8 @@ export default {
     },
     extend: {
       backgroundColor: {
-        'header': 'rgba(16, 24, 40, 0.25)'
+        'header': 'rgba(16, 24, 40, 0.25)',
+        'primary': 'rgba(16, 24, 40, 1)'
       },
       borderColor: {
         'header': '#1D2939'
@@ -23,6 +24,7 @@ export default {
       textColor: {
         'primary': '#EAECF0',
         'secondary': '#FCFCFD',
+        'accent': '#D0D5DD',
         'footer': '#98A2B3',
       }
     },
