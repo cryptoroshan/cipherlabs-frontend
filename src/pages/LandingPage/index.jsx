@@ -8,7 +8,7 @@ const LandingPage = () => {
 
   return (
     <div className="flex flex-col gap-6 items-center mx-auto text-center">
-      <p className="text-5xl xl:text-[64px] 2xl:text-[96px] 3xl:text-[96px] 4xl:text-[96px] 5xl:text-[96px] 6xl:text-[96px] font-black text-secondary xs:max-w-[250px] sm:max-w-[514px] xl:max-w-[768px] 2xl:max-w-[1028px] 3xl:max-w-[5000px]" style={{
+      <p className="text-5xl xl:text-[64px] 2xl:text-[96px] 3xl:text-[96px] 4xl:text-[96px] 5xl:text-[96px] 6xl:text-[96px] font-black text-secondary" style={{
         lineHeight: 'normal',
         textShadow: '0px 0px 100px #000'
       }}>

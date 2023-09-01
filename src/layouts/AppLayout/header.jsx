@@ -89,7 +89,7 @@ const Header = () => {
         <div className="flex flex-col justify-center px-1 py-1 h-full">
           <Link
             to="/"
-            className="text-accent text-2xl lg:text-[40px] font-extrabold leading-9 lg:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
+            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 lg:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
@@ -97,7 +97,7 @@ const Header = () => {
               transform: toggle
                 ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                 : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "all",
+              transitionProperty: "transform, opacity",
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
@@ -105,7 +105,7 @@ const Header = () => {
             Analytics
           </Link>
           <Link
-            className="text-accent text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
+            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
@@ -113,7 +113,7 @@ const Header = () => {
               transform: toggle
                 ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                 : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "all",
+              transitionProperty: "transform, opacity",
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
@@ -121,7 +121,7 @@ const Header = () => {
             Trading Journal
           </Link>
           <Link
-            className="text-accent text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
+            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
@@ -129,7 +129,7 @@ const Header = () => {
               transform: toggle
                 ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                 : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "all",
+              transitionProperty: "transform, opacity",
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
@@ -137,7 +137,7 @@ const Header = () => {
             KRSI Indicator
           </Link>
           <Link
-            className="text-accent text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
+            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
@@ -145,7 +145,7 @@ const Header = () => {
               transform: toggle
                 ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                 : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "all",
+              transitionProperty: "transform, opacity",
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
@@ -153,7 +153,7 @@ const Header = () => {
             Governance
           </Link>
           <Link
-            className="text-accent text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
+            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
@@ -161,7 +161,7 @@ const Header = () => {
               transform: toggle
                 ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                 : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "all",
+              transitionProperty: "transform, opacity",
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
@@ -169,7 +169,7 @@ const Header = () => {
             Contact Us
           </Link>
           <Link
-            className="text-accent text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
+            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
@@ -177,7 +177,7 @@ const Header = () => {
               transform: toggle
                 ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                 : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "all",
+              transitionProperty: "transform, opacity",
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
@@ -185,7 +185,7 @@ const Header = () => {
             About Us
           </Link>
           <Link
-            className="text-accent text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
+            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
@@ -193,7 +193,7 @@ const Header = () => {
               transform: toggle
                 ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                 : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "all",
+              transitionProperty: "transform, opacity",
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
@@ -201,7 +201,7 @@ const Header = () => {
             Terms Of Use
           </Link>
           <Link
-            className="text-accent text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
+            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
@@ -209,7 +209,7 @@ const Header = () => {
               transform: toggle
                 ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                 : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "all",
+              transitionProperty: "transform, opacity",
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
@@ -227,7 +227,7 @@ const Header = () => {
           bottom: "auto",
           width: isGreater ? "3vh" : "3vw",
           height: isGreater ? "3vh" : "3vw",
-          transitionProperty: "all",
+          transitionProperty: "transform, opacity",
           transitionDuration: "0.5s",
           transitionDelay: toggle ? "0s" : "1s",
         }}

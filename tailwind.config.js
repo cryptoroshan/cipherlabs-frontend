@@ -24,7 +24,7 @@ export default {
       textColor: {
         'primary': '#EAECF0',
         'secondary': '#FCFCFD',
-        'accent': '#FCFCFD',
+        'accent': '#D0D5DD',
         'footer': '#98A2B3',
       }
     },
