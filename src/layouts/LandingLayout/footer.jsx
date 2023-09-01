@@ -9,6 +9,7 @@ const Footer = () => {
       <a
         href="https://www.linkedin.com/company/cipher-labs-xyz"
         target="_blank"
+        rel="noreferrer"
       >
         <img src={linkedinIcon} />
       </a>
@@ -21,7 +22,7 @@ const Footer = () => {
           <p className="text-sm font-medium text-footer">Privacy Policy</p>
         </Link>
       </div>
-      <a href="https://twitter.com/cipherlabsxyz" target="_blank">
+      <a href="https://twitter.com/cipherlabsxyz" target="_blank" rel="noreferrer">
         <img src={twitterIcon} />
       </a>
     </footer>
