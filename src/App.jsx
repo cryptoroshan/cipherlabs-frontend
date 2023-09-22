@@ -5,6 +5,7 @@ import AppLayout from "./layouts/AppLayout";
 import LandingPage from "./pages/LandingPage";
 import TermsOfUsePage from "./pages/TermsOfUsePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route element={<AppLayout />}>
           <Route path="/terms-of-use" element={<TermsOfUsePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
         </Route>
       </Routes>
     </>

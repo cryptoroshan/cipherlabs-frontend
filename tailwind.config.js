@@ -25,6 +25,7 @@ export default {
         'primary': '#EAECF0',
         'secondary': '#FCFCFD',
         'accent': '#D0D5DD',
+        'green': '#1ADEC6',
         'footer': '#98A2B3',
       }
     },
