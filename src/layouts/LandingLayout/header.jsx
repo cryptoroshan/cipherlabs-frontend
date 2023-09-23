@@ -86,23 +86,6 @@ const Header = () => {
         />
         <div className="flex flex-col justify-center px-1 py-1 h-full">
           <Link
-            to="/"
-            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 lg:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
-            style={{
-              textShadow: "0px 0px 100px #000",
-              transformStyle: "preserve-3d",
-              opacity: toggle ? 1 : 0,
-              transform: toggle
-                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
-                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "transform, opacity",
-              transitionDuration: "1s",
-              transitionDelay: toggle ? "1s" : "0s",
-            }}
-          >
-            Analytics
-          </Link>
-          <Link
             className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
@@ -116,55 +99,7 @@ const Header = () => {
               transitionDelay: toggle ? "1s" : "0s",
             }}
           >
-            Trading Journal
-          </Link>
-          <Link
-            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
-            style={{
-              textShadow: "0px 0px 100px #000",
-              transformStyle: "preserve-3d",
-              opacity: toggle ? 1 : 0,
-              transform: toggle
-                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
-                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "transform, opacity",
-              transitionDuration: "1s",
-              transitionDelay: toggle ? "1s" : "0s",
-            }}
-          >
-            KRSI Indicator
-          </Link>
-          <Link
-            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
-            style={{
-              textShadow: "0px 0px 100px #000",
-              transformStyle: "preserve-3d",
-              opacity: toggle ? 1 : 0,
-              transform: toggle
-                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
-                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "transform, opacity",
-              transitionDuration: "1s",
-              transitionDelay: toggle ? "1s" : "0s",
-            }}
-          >
-            Governance
-          </Link>
-          <Link
-            className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
-            style={{
-              textShadow: "0px 0px 100px #000",
-              transformStyle: "preserve-3d",
-              opacity: toggle ? 1 : 0,
-              transform: toggle
-                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
-                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transitionProperty: "transform, opacity",
-              transitionDuration: "1s",
-              transitionDelay: toggle ? "1s" : "0s",
-            }}
-          >
-            Contact Us
+            dYdX
           </Link>
           <Link
             to="/about-us"

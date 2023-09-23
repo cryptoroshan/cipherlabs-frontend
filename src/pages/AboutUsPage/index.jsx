@@ -7,9 +7,9 @@ import socialIcon from "/imgs/landing/social icon.png";
 const AboutUsPage = () => {
   return (
     <section className="flex flex-col gap-8 py-[82px] lg:py-[189px] text-primary sm:w-1/2 2xl:w-2/5 mx-auto px-[22px] text-justify">
-      <p className="text-4xl lg:text-5xl font-black">Welcome to Cipher Labs:</p>
+      <p className="text-[28px] lg:text-5xl font-black">Welcome to Cipher Labs:</p>
       <section className="flex flex-col gap-4">
-        <p className="text-2xl font-black">
+        <p className="text-lg md:text-2xl font-black">
           Your Trading Edge in the DeFi World
         </p>
         <p className="text-base italic">
@@ -70,7 +70,7 @@ const AboutUsPage = () => {
           consistently innovating to enhance your trading experience.
         </p>
       </section>
-      <section className="flex justify-between text-base mt-14 mb-13">
+      <section className="grid grid-cols-2 xl:grid-cols-4 gap-8 text-base mt-14 mb-12">
         <div className="flex flex-col gap-[21px] items-center justify-between text-center">
           <img src={kagan} />
           <div className="flex flex-col gap-[10px] items-center">
@@ -148,20 +148,40 @@ const AboutUsPage = () => {
         <ul className="text-base list-disc ml-10 list-outside">
           <li>What platforms do you support?</li>
           <ul className="list-disc ml-10 list-outside">
-            <li>Currently, we&apos;re focused on dYdX but are planning to expand to Vertex next.</li>
+            <li>
+              Currently, we&apos;re focused on dYdX but are planning to expand
+              to Vertex next.
+            </li>
           </ul>
-          <li>
-            Can I delegate my dYdX voting power to Cipher Labs?
-          </li>
+          <li>Can I delegate my dYdX voting power to Cipher Labs?</li>
           <ul className="list-disc ml-10 list-outside">
-            <li>Yes, we are an endorsed delegate for dYdX and you can delegate your voting power to <span className="text-green">cipherlabs.eth</span></li>
+            <li>
+              Yes, we are an endorsed delegate for dYdX and you can delegate
+              your voting power to{" "}
+              <a
+                className="text-green"
+                href="https://cipherlabs.eth"
+                target="_blank"
+                rel="noreferrer"
+              >
+                cipherlabs.eth
+              </a>
+            </li>
           </ul>
         </ul>
       </section>
       <section className="flex flex-col gap-4">
         <p className="text-4xl font-black">Contact Information</p>
         <p className="text-base">
-          For any inquiries, feel free to contact us: <span className="text-green">hello@cipherlabs.xyz</span>
+          For any inquiries, feel free to contact us:{" "}
+          <a
+            className="text-green"
+            href="https://hello@cipherlabs.xyz"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hello@cipherlabs.xyz
+          </a>
         </p>
       </section>
     </section>
