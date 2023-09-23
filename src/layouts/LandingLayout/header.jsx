@@ -9,20 +9,22 @@ import closeIcon from "/imgs/landing/close.svg";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  const [isGreater, setIsGreater] = useState (window.innerHeight > window.innerWidth? true:false)
+  const [isGreater, setIsGreater] = useState(
+    window.innerHeight > window.innerWidth ? true : false
+  );
   const ref = useRef();
-  const ref1 = useRef()
+  const ref1 = useRef();
 
   useEffect(() => {
     const handleWindowResize = () => {
-      if (window.innerHeight > window.innerWidth) setIsGreater (true)
-      else setIsGreater (false)
+      if (window.innerHeight > window.innerWidth) setIsGreater(true);
+      else setIsGreater(false);
     };
 
-    window.addEventListener('resize', handleWindowResize);
+    window.addEventListener("resize", handleWindowResize);
 
     return () => {
-      window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
 
@@ -64,7 +66,19 @@ const Header = () => {
         src={menuIcon}
         onClick={() => setToggle(!toggle)}
       />
-      <div className={clsx("absolute z-[9] left-0 right-0 bottom-0 w-screen h-screen bg-primary", toggle === false ? "invisible" : "visible")} ref={ref1} id="menu1" style={{top: "-100%", transitionProperty: "opacity", transitionDuration: "1s",}}>
+      <div
+        className={clsx(
+          "absolute z-[9] left-0 right-0 bottom-0 w-screen h-screen bg-primary",
+          toggle === false ? "invisible" : "visible"
+        )}
+        ref={ref1}
+        id="menu1"
+        style={{
+          top: "-100%",
+          transitionProperty: "opacity",
+          transitionDuration: "1s",
+        }}
+      >
         <img
           className="absolute top-[26px] right-6 lg:right-[27px] 2xl:right-[29px] hover:cursor-pointer"
           src={closeIcon}
@@ -78,12 +92,12 @@ const Header = () => {
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
               opacity: toggle ? 1 : 0,
-              transform: toggle ? 
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)" :
-                  "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              transform: toggle
+                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
               transitionProperty: "transform, opacity",
               transitionDuration: "1s",
-              transitionDelay: toggle? "1s": "0s"
+              transitionDelay: toggle ? "1s" : "0s",
             }}
           >
             Analytics
@@ -94,12 +108,12 @@ const Header = () => {
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
               opacity: toggle ? 1 : 0,
-              transform: toggle ? 
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)" :
-                  "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              transform: toggle
+                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
               transitionProperty: "transform, opacity",
               transitionDuration: "1s",
-              transitionDelay: toggle? "1s": "0s"
+              transitionDelay: toggle ? "1s" : "0s",
             }}
           >
             Trading Journal
@@ -110,12 +124,12 @@ const Header = () => {
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
               opacity: toggle ? 1 : 0,
-              transform: toggle ? 
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)" :
-                  "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              transform: toggle
+                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
               transitionProperty: "transform, opacity",
               transitionDuration: "1s",
-              transitionDelay: toggle? "1s": "0s"
+              transitionDelay: toggle ? "1s" : "0s",
             }}
           >
             KRSI Indicator
@@ -126,12 +140,12 @@ const Header = () => {
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
               opacity: toggle ? 1 : 0,
-              transform: toggle ? 
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)" :
-                  "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              transform: toggle
+                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
               transitionProperty: "transform, opacity",
               transitionDuration: "1s",
-              transitionDelay: toggle? "1s": "0s"
+              transitionDelay: toggle ? "1s" : "0s",
             }}
           >
             Governance
@@ -142,61 +156,67 @@ const Header = () => {
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
               opacity: toggle ? 1 : 0,
-              transform: toggle ? 
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)" :
-                  "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              transform: toggle
+                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
               transitionProperty: "transform, opacity",
               transitionDuration: "1s",
-              transitionDelay: toggle? "1s": "0s"
+              transitionDelay: toggle ? "1s" : "0s",
             }}
           >
             Contact Us
           </Link>
           <Link
+            to="/about-us"
             className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
               opacity: toggle ? 1 : 0,
-              transform: toggle ? 
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)" :
-                  "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              transform: toggle
+                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
               transitionProperty: "transform, opacity",
               transitionDuration: "1s",
-              transitionDelay: toggle? "1s": "0s"
+              transitionDelay: toggle ? "1s" : "0s",
             }}
+            onClick={() => setToggle(!toggle)}
           >
             About Us
           </Link>
           <Link
+            to="/terms-of-use"
             className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
               opacity: toggle ? 1 : 0,
-              transform: toggle ? 
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)" :
-                  "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              transform: toggle
+                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
               transitionProperty: "transform, opacity",
               transitionDuration: "1s",
-              transitionDelay: toggle? "1s": "0s"
+              transitionDelay: toggle ? "1s" : "0s",
             }}
+            onClick={() => setToggle(!toggle)}
           >
             Terms Of Use
           </Link>
           <Link
+            to="/privacy-policy"
             className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
               transformStyle: "preserve-3d",
               opacity: toggle ? 1 : 0,
-              transform: toggle ? 
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)" :
-                  "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              transform: toggle
+                ? "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                : "translate3d(0px, 30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
               transitionProperty: "transform, opacity",
               transitionDuration: "1s",
-              transitionDelay: toggle? "1s": "0s"
+              transitionDelay: toggle ? "1s" : "0s",
             }}
+            onClick={() => setToggle(!toggle)}
           >
             Privacy Policy
           </Link>
@@ -206,14 +226,14 @@ const Header = () => {
         className="fixed z-[7] rounded-full bg-primary"
         style={{
           left: "auto",
-          top: isGreater? "-1.5vh": "-1.5vw",
-          right: isGreater? "-1.5vh": "-1.5vw",
+          top: isGreater ? "-1.5vh" : "-1.5vw",
+          right: isGreater ? "-1.5vh" : "-1.5vw",
           bottom: "auto",
-          width: isGreater? "3vh": "3vw",
-          height: isGreater? "3vh": "3vw",
+          width: isGreater ? "3vh" : "3vw",
+          height: isGreater ? "3vh" : "3vw",
           transitionProperty: "transform, opacity",
           transitionDuration: "0.5s",
-          transitionDelay: toggle? "0s": "1s"
+          transitionDelay: toggle ? "0s" : "1s",
         }}
         ref={ref}
       ></div>
