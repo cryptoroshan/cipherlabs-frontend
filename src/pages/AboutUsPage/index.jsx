@@ -78,7 +78,7 @@ const AboutUsPage = () => {
               <p className="text-[#FFF] font-bold">Kagan Powell</p>
               <p className="text-primary">Founder</p>
             </div>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/kagan-powell-236a3914/" target="_blank" rel="noreferrer">
               <img src={socialIcon} />
             </a>
           </div>
@@ -90,7 +90,7 @@ const AboutUsPage = () => {
               <p className="text-[#FFF] font-bold">Barrett Ovens</p>
               <p className="text-primary">Project Management</p>
             </div>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/barrett-ovens-610a8534/" target="_blank" rel="noreferrer">
               <img src={socialIcon} />
             </a>
           </div>
@@ -102,7 +102,7 @@ const AboutUsPage = () => {
               <p className="text-[#FFF] font-bold">Amir Harambasic</p>
               <p className="text-primary">Engineer</p>
             </div>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/amir-harambasic/" target="_blank" rel="noreferrer">
               <img src={socialIcon} />
             </a>
           </div>
@@ -114,7 +114,7 @@ const AboutUsPage = () => {
               <p className="text-[#FFF] font-bold">Ronald Jason</p>
               <p className="text-primary">Engineer</p>
             </div>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/ronald-jason-91692b266/" target="_blank" rel="noreferrer">
               <img src={socialIcon} />
             </a>
           </div>
@@ -176,7 +176,7 @@ const AboutUsPage = () => {
           For any inquiries, feel free to contact us:{" "}
           <a
             className="text-green"
-            href="https://hello@cipherlabs.xyz"
+            href="mailto:kagan@cipherlabs.xyz"
             target="_blank"
             rel="noreferrer"
           >
