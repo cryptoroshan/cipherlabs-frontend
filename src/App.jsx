@@ -8,7 +8,7 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import DydxPage from "./pages/DydxPage";
 
-import { PATHS } from "./path";
+import { PATHS } from "./constant";
 
 function App() {
   return (

@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
+import { useMedia } from 'react-use'
 
 import logoIcon from "/imgs/landing/logo.svg";
 import CipherLabsIcon from "/imgs/landing/CipherLabs.svg";
@@ -14,6 +15,8 @@ const Header = () => {
   );
   const ref = useRef();
   const ref1 = useRef();
+
+  const below600 = useMedia('(max-width: 600px)');
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -59,7 +62,7 @@ const Header = () => {
     <header className="flex flex-row justify-between items-center w-full">
       <Link to="/" className="flex flex-row gap-[14px] hover:cursor-pointer">
         <img src={logoIcon} />
-        <img src={CipherLabsIcon} />
+        {!below600 && <img src={CipherLabsIcon} />}
       </Link>
       <img
         className="hover:cursor-pointer"

@@ -10,7 +10,7 @@ import closeIcon from "/imgs/landing/close.svg";
 import dydxIcon from "/imgs/dydx/dydx-icon.svg";
 import dydxLogo from "/imgs/dydx/dydx-logo.svg";
 
-import { PATHS } from "../../path";
+import { PATHS } from "../../constant";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -68,7 +68,7 @@ const Header = () => {
       <header className="fixed flex flex-row justify-between items-center w-full border-b border-header px-[22px] py-5 backdrop-blur-[2px] bg-header">
         <Link to="/" className="flex flex-row gap-[14px] hover:cursor-pointer w-[10%]">
           <img src={logoIcon} />
-          <img src={CipherLabsIcon} />
+          {!below600 && <img src={CipherLabsIcon} />}
         </Link>
         {isDydx && <img className="cursor-pointer" src={below600?dydxLogo : dydxIcon} />}
         <div className="flex flex-row justify-end w-[10%] h-6 text-right">
