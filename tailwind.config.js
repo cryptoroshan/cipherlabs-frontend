@@ -30,6 +30,9 @@ export default {
         'accent': '#D0D5DD',
         'green': '#1ADEC6',
         'footer': '#98A2B3',
+      },
+      boxShadow: {
+        'small': '0px 0px 100px 0px #000'
       }
     },
   },

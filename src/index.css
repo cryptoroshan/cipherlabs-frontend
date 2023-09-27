@@ -20,11 +20,11 @@
 .dydx-journal-header {
   text-shadow: 0px 0px 100px #000;
   font-family: "SF Pro Display";
-  @apply text-secondary text-4xl leading-normal font-black;
+  @apply text-secondary text-2xl sm:text-4xl leading-normal font-black;
 }
 
 .dydx-analytics-header {
   text-shadow: 0px 0px 100px #000;
   font-family: "SF Pro Display";
-  @apply text-secondary text-4xl leading-normal font-black;
+  @apply text-secondary text-2xl sm:text-4xl leading-normal font-black;
 }
