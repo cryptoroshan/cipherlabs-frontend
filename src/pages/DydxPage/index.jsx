@@ -25,7 +25,7 @@ const DydxPage = () => {
                 <div className="mx-0 my-0 sm:m-8">
                     <div className="dydx-analytics-header">dYdX v3 Volume Analytics</div>
                     <div className="text-primary text-sm sm:text-base font-medium leading-6">
-                    Our <a href="#" target="_blank" rel="noreferrer"><span className="text-green cursor-pointer">dYdX v3 Volume Analytics Dashboard</span></a>, 
+                    Our <a href="https://www.cipherlabs.xyz" target="_blank" rel="noreferrer"><span className="text-green cursor-pointer">dYdX v3 Volume Analytics Dashboard</span></a>, 
                     crafted as a demo for our upcoming v4 Analytics Dashboard release, capitalizes on the rich 
                     volume data of dYdX v3. Its standout feature is the combined market volume presentation, a sought-after insight not found elsewhere. 
                     This tool empowers traders to pinpoint significant market peaks and troughs, facilitating a deeper understanding of crucial buying 
