@@ -86,6 +86,7 @@ const Header = () => {
         />
         <div className="flex flex-col justify-center px-1 py-1 h-full">
           <Link
+            to="/dydx"
             className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
@@ -98,6 +99,7 @@ const Header = () => {
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
+            onClick={() => setToggle(!toggle)}
           >
             dYdX
           </Link>

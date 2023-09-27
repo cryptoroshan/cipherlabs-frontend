@@ -1,11 +1,16 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
+import { useMedia } from 'react-use'
 
 import logoIcon from "/imgs/landing/logo.svg";
 import CipherLabsIcon from "/imgs/landing/CipherLabs.svg";
 import menuIcon from "/imgs/landing/menu.svg";
 import closeIcon from "/imgs/landing/close.svg";
+import dydxIcon from "/imgs/dydx/dydx-icon.svg";
+import dydxLogo from "/imgs/dydx/dydx-logo.svg";
+
+import { PATHS } from "../../path";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,6 +19,9 @@ const Header = () => {
   );
   const ref = useRef();
   const ref1 = useRef();
+
+  const isDydx = window.location.pathname === PATHS.DYDX
+  const below600 = useMedia('(max-width: 600px)');
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -58,15 +66,17 @@ const Header = () => {
   return (
     <>
       <header className="fixed flex flex-row justify-between items-center w-full border-b border-header px-[22px] py-5 backdrop-blur-[2px] bg-header">
-        <Link to="/" className="flex flex-row gap-[14px] hover:cursor-pointer">
+        <Link to="/" className="flex flex-row gap-[14px] hover:cursor-pointer w-[10%]">
           <img src={logoIcon} />
           <img src={CipherLabsIcon} />
         </Link>
+        {isDydx && <img className="cursor-pointer" src={below600?dydxLogo : dydxIcon} />}
+        <div className="flex flex-row justify-end w-[10%] h-6 text-right">
         <img
-          className="hover:cursor-pointer"
+          className="hover:cursor-pointer h-6"
           src={menuIcon}
           onClick={() => setToggle(!toggle)}
-        />
+        /></div>
       </header>
       <div
         className={clsx(
@@ -88,6 +98,7 @@ const Header = () => {
         />
         <div className="flex flex-col justify-center px-1 py-1 h-full">
           <Link
+            to="/dydx"
             className="text-accent hover:text-secondary text-2xl lg:text-[40px] font-extrabold leading-9 xl:leading-[60px] 2xl:leading-[96px] text-center w-fit mx-auto"
             style={{
               textShadow: "0px 0px 100px #000",
@@ -100,6 +111,7 @@ const Header = () => {
               transitionDuration: "1s",
               transitionDelay: toggle ? "1s" : "0s",
             }}
+            onClick={() => setToggle(!toggle)}
           >
             dYdX
           </Link>

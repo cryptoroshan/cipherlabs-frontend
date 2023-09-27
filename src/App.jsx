@@ -6,21 +6,25 @@ import LandingPage from "./pages/LandingPage";
 import TermsOfUsePage from "./pages/TermsOfUsePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import DydxPage from "./pages/DydxPage";
+
+import { PATHS } from "./path";
 
 function App() {
   return (
-    <>
+    <div className="align-middle">
       <Routes>
         <Route element={<LandingLayout />}>
           <Route path="/" element={<LandingPage />} />
         </Route>
         <Route element={<AppLayout />}>
-          <Route path="/terms-of-use" element={<TermsOfUsePage />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path={PATHS.TERMSOFUSE} element={<TermsOfUsePage />} />
+          <Route path={PATHS.PRIVACY} element={<PrivacyPolicyPage />} />
+          <Route path={PATHS.ABOUTUS} element={<AboutUsPage />} />
+          <Route path={PATHS.DYDX} element={<DydxPage />} />
         </Route>
       </Routes>
-    </>
+    </div>
   );
 }
 

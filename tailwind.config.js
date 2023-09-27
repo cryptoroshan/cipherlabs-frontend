@@ -21,6 +21,9 @@ export default {
       borderColor: {
         'header': '#1D2939'
       },
+      borderRadius: {
+        '2md': '10px'
+      },
       textColor: {
         'primary': '#EAECF0',
         'secondary': '#FCFCFD',
