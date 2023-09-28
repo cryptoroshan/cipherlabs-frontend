@@ -20,7 +20,7 @@ const Header = () => {
   const ref = useRef();
   const ref1 = useRef();
 
-  const isDydx = window.location.pathname === PATHS.DYDX
+  const isDydx = window.location.pathname.startsWith(PATHS.DYDX)
   const below600 = useMedia('(max-width: 600px)');
 
   useEffect(() => {
@@ -86,7 +86,7 @@ const Header = () => {
         ref={ref1}
         id="menu1"
         style={{
-          top: "-100%",
+          top: "-100vh",
           transitionProperty: "opacity",
           transitionDuration: "1s",
         }}
